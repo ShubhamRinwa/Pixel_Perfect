@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: 20px;
+    border-top: 5px solid #5F2FA2;
+    background: rgba(205, 191, 226, 0.54);
+    box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px 0px 20px;
+    margin: 15px 50px 15px 50px;
+    text-align: center;
+    overflow: hidden;
+    height: 290px;
+    animation: scaleUp 2s forwards;
+
+}
+
+.mainheading {
+    color: #562B93;
+    font-family: Acme;
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-shadow: 5px 5px 12px #B59FD4;
+}
+
+.datescontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px 20px 0px 20px;
+    animation: scrollAnimation 30s linear infinite alternate;
+    animation-play-state: running;
+
+}
+
+
+
+.onentry {
+    width: 250px;
+    height: 200px;
+    margin: 10px 10px 0px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 35px;
+    background: #EFEAF6;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+
+    
+}
+
+.desc {
+    color: #562B93;
+    font-size: 20px;
+    font-family: Mulish;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: capitalize;
+
+
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.container:hover .datescontainer {
+    animation-play-state: paused;
+
+}
+
+.onentry:hover {
+    border: 1.5px solid #562B93;
+}
+
+.onentry:hover .desc {
+    font-weight: 600;
+}
+
+@media(max-width:850px) {
+    .container {
+        height: 230px;
+    }
+   .onentry {
+        width: 150px;
+        height: 150px;
+        border-radius: 25px;
+
+    }
+
+    .desc {
+
+        font-size: 15px;
+       
+    }
+
+}
+@media(max-width:540px) {
+    .container {
+        height: 150px;
+        padding: 5px;
+    margin: 10px;
+    }
+    .mainheading{
+        font-size:20px ;
+     }
+   .onentry {
+        width: 120px;
+        height: 100px;
+        border-radius: 18px;
+        margin: 5px;
+    padding: 5px;
+
+    }
+
+    .desc {
+
+        font-size: 12px;
+        line-height: 15px;
+       
+    }
+
+}
+@keyframes scaleUp {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+
+    }
+  }

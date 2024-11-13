@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px 15px 30px;
+    padding: 30px;
+    border-radius: 20px;
+    border-top: 5px solid #562B93;
+    background: rgba(205, 191, 226, 0.54);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    animation: scaleUp 2s forwards;
+
+}
+
+.logoName {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.logo {
+    height: 100px;
+    width: 161px;
+    display: inline-block;
+    margin-right: 40px;
+
+
+}
+
+.dateName {
+    display: inline-block;
+
+}
+
+.mainheading {
+    color: #562B93;
+    font-family: Acme;
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-shadow: 5px 5px 15px #B59FD4;
+    animation: text 2s infinite;
+
+
+}
+
+.confdate {
+    color: #562B93;
+    font-family: Acme;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    animation: text 2s infinite;
+
+}
+
+.conDes {
+    color: #562B93;
+    font-size: 18px;
+    font-family: mulish;
+    font-weight: 400;
+    word-spacing: 2px;
+
+}
+
+@media(max-width:540px) {
+    .mainheading {
+        font-size: 25px;
+    }
+
+    .container {
+
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .onentry {
+        margin: 20px 0 20px 0;
+        padding: 5px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 121px;
+
+        margin-right: 20px;
+
+    }
+
+    .confdate {
+
+
+        font-size: 20px;
+    }
+
+    .conDes {
+
+        font-size: 15px;
+
+
+    }
+}
+
+@media(max-width:360px) {
+    .mainheading {
+        font-size: 25px;
+    }
+
+    .container {
+
+        padding: 5px;
+        margin: 15px 5px 15x 5px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 80px;
+
+        margin-right: 10px;
+
+    }
+
+    .onentry {
+        margin: 20px 0 20px 0;
+        padding: 5px;
+    }
+
+    .confdate {
+
+
+        font-size: 18px;
+    }
+
+    .conDes {
+
+        font-size: 13px;
+
+
+    }
+}
+@keyframes scaleUp {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+
+    }
+  }
+  @keyframes text {
+    0%,100% {
+      transform: scale(0.75);
+      
+
+    }
+    50% {
+      transform: scale(1);
+
+    }
+  }
+
+
