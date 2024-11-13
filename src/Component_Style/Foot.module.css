@@ -1,0 +1,99 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: #5F2FA2;
+    color: aliceblue;
+
+
+}
+
+.inst {
+
+    width: 25%;
+    margin:10px;
+    padding: 10px;
+    border-right: 1px solid aliceblue;
+    
+    
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.iconitem{
+    color: aliceblue;
+    height:25px;
+    width:35px;
+    opacity: 0.5;
+    animation: scale 1.5s ease-in-out infinite;
+
+}
+
+.aboutinst {
+    width:65%;
+    margin:10px;
+   
+}
+.textinst{
+font-size: 16px;
+font-family: mulish;
+}
+.textinst2{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: mulish;
+
+    }
+.textabouth{
+    font-size: 30px;
+    font-weight: 600;
+    padding:10px;
+
+}
+.textabout{
+font-size:14px;
+font-family: mulish;
+padding:10px;
+opacity: 0.9;
+}
+.iconitem:hover{
+    opacity: 1;
+    color:white;
+    animation:none;
+}
+@media(max-width:540px){
+    .container {
+        display: flex;        
+       flex-direction: column;        
+    }
+    .inst{
+        width: 100%;
+        margin:0px;
+    }
+    .aboutinst {
+        width:100%;
+        margin:0px;
+      
+        
+    }
+    .textabout{
+        font-size:12px;
+            }
+   }
+
+   @keyframes scale {
+    0% {
+    
+      transform: scale(0.75) ;
+    }
+
+    100% {
+      transform: scale(1.1) ;
+    }
+  }
